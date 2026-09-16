@@ -19,6 +19,18 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
+        }
+        PrintWelcomeMessage();
+
+        Console.WriteLine("----------------------------------");
+
+
+
+
+
 
 
 
