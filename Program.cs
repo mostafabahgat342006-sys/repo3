@@ -125,6 +125,11 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        // named parameter -> Despite the difference in order,each value go in the true path
+        PrintBookInfo(pages: 464, title: "Clean Code");
+
+        Console.WriteLine("----------------------------------");
+
 
 
 
