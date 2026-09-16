@@ -113,6 +113,17 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine("Book title: " + title);
+            Console.WriteLine("Pages: " + pages);
+        }
+        // function with no pages -> use the default value = 300
+        PrintBookInfo("Clean Code");
+        Console.WriteLine("");
+        PrintBookInfo("Clean Code", 464);
+
+        Console.WriteLine("----------------------------------");
 
 
 
