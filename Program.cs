@@ -59,8 +59,28 @@ internal class Program
         Console.WriteLine(prices[0]);
 
         // output : 20.5 -> because array is a reference type and the metod 
-        //                  will handle it in the same location in the memory.  
+        //                  will handle it in the same location in the memory.
+                       
         Console.WriteLine("----------------------------------");
+
+        static void AddBonusPagesByRef(ref int pages)
+        {
+            pages = pages + 50;
+        }
+        int nwe_pages = 400;
+
+        AddBonusPagesByRef(ref pages);
+
+        Console.WriteLine(pages);
+
+        // output : 450 -> because (ref) make the metod deal with same original variable
+
+        Console.WriteLine("----------------------------------");
+
+
+
+
+
 
 
 
