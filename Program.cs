@@ -77,6 +77,22 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0 , 12.5 , 15.0 };
+        }
+        double[] Prices = { 25.5 , 40.0 };
+
+        ReplaceArray(ref Prices);
+
+        Console.WriteLine(prices.Length);
+
+        // here we change in the original array not copy 
+
+        Console.WriteLine("----------------------------------");
+
+
+
 
 
 
