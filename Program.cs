@@ -49,6 +49,19 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        static void ApplyDiscount(double[] prices)
+        {
+            prices[0] = prices[0] - 5;
+        }
+
+        ApplyDiscount(prices);
+
+        Console.WriteLine(prices[0]);
+
+        // output : 20.5 -> because array is a reference type and the metod 
+        //                  will handle it in the same location in the memory.  
+        Console.WriteLine("----------------------------------");
+
 
 
 
