@@ -35,8 +35,19 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        static void AddBonusPages(int pages)
+        {
+            pages = pages + 50;
+        }
+        int pages = 400;
 
+        AddBonusPages(pages);
 
+        Console.WriteLine(pages);
+
+        // output : 400 -> because (int) is a value type,a copy of a value (pages) sent to method
+
+        Console.WriteLine("----------------------------------");
 
 
 
