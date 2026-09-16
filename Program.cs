@@ -27,6 +27,17 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " + title);
+        }
+        PrintBookTitle("Clean Code ");
+
+        Console.WriteLine("----------------------------------");
+
+
+
+
 
 
 
