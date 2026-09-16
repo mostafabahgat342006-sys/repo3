@@ -130,6 +130,18 @@ internal class Program
 
         Console.WriteLine("----------------------------------");
 
+        static void PrintAllTitles(params string[] titles)
+        {
+            foreach (string title in titles)
+            {
+                Console.WriteLine(title);
+            }
+        }
+        // params -> work with any number you send it
+        PrintAllTitles("Clean Code", "Programmer", "Art of war");
+        Console.WriteLine("");
+        PrintAllTitles("Clean Code", "Art of war");
+        
 
 
 
